@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire d'inscription</title>
+    <link rel="stylesheet" href="css/site.css">
+</head>
+<body>
+    
+    <div class="infos">
+        <h1>TP Formulaire - Webmaster</h1>
+        <h2>Centre : Institut Professionnelle des Metiers de l'emploi</h2>
+        <h3>Prof: M. Giresse FOYET</h3>
+    </div>
+    <form id="regForm" action="/submit.php" method="post" class="form-container">
+        <h2 class="form-title">Formulaire d'inscription</h2>
+        <div class="form-group">
+            <label for="nom">Nom:</label>
+            <input type="text" id="nom" name="nom" required>
+        </div>
+        <div class="form-group">
+            <label for="adresse">Adresse:</label>
+            <input type="text" id="adresse" name="adresse" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Adresse électronique:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+            <label for="mot-de-passe">Mot de passe:</label>
+            <input type="password" id="mot-de-passe" name="mot-de-passe" required>
+        </div>
+        <div class="form-group">
+            <label for="telephone">Téléphone:</label>
+            <input type="tel" id="telephone" name="telephone" required>
+        </div>
+        <div class="form-group">
+            <label for="sujet">Sélectionnez le Livre:</label>
+            <select id="sujet" name="sujet" required>
+                <option value="" disabled selected>Choisissez un livre</option>
+                <option value="html">HTML</option>
+                <option value="css">CSS</option>
+                <option value="php">PHP</option>
+                <option value="javascript">JavaScript</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="commentaire">Commentaires:</label>
+            <textarea id="commentaire" name="commentaire" rows="4" required></textarea>
+        </div>
+        <div class="form-buttons">
+            <input type="submit" value="Envoyer">
+            <input type="reset" value="Réinitialiser">
+        </div>
+    </form>
+    <script src="js/script.js"></script>
+</body>
+</html>
